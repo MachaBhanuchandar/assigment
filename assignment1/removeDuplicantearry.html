@@ -1,0 +1,31 @@
+<!-- 19.Write a program to remove duplicate from array -->
+<!-- [30, 45, 60, 20, 30, 55] -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        remove DuplicantfromArray
+    </title>
+</head>
+
+<body>
+    <script>
+        var arr = [30, 45, 60, 20, 30, 55];
+
+        function removeDuplicates(arr) {
+            var unique = [];
+            for (i = 0; i < arr.length; i++) {
+                if (unique.indexOf(arr[i]) === -1) {
+                    unique.push(arr[i]);
+                }
+            }
+            return unique;
+        }
+
+        alert(removeDuplicates(arr));
+    </script>
+
+</body>
+
+</html>
