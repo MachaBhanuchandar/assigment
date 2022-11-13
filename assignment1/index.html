@@ -1,14 +1,67 @@
+<!-- 20. Write a piece of code to center a div vertically and horizontally. -->
 <!DOCTYPE html>
 <html>
 
 <head>
+    <style>
+        .parent {
+            width: 500px;
+            height: 300px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child1 {
+            width: 440px;
+            height: 280px;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child2 {
+            width: 400px;
+            height: 260px;
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .child3 {
+            width: 150px;
+            height: 50px;
+            background: green;
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+    </style>
+
+
     <title>
         Assigment-1
     </title>
 </head>
 
 <body>
-    <script src="index.js">
+    <div class="parent">
+        <div class="child1">
+            <div class="child2">
+                <div class="child3">
+                    Div is in Center
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="promise.js">
+
 
     </script>
 </body>

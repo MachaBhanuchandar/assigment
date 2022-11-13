@@ -1,0 +1,42 @@
+<!-- 13. What is call apply bind explain this with the help of example. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CallApplyBind
+    </title>
+</head>
+
+<body>
+    <script>
+        var user = {
+            name: "bhanu",
+            show: function () {
+                console.log(this.name)
+            }
+        }
+        user.show()
+
+
+        var user2 = {
+            name: "chandar"
+        }
+        var person = {
+            name: "macha"
+        }
+        //         Call=>invokes the function immediately and allows you to pass in arguments one by one
+        //         Apply=> invokes the function immediately and allows you to pass in arguments as an array.
+        //         Bind=>returns a new function, and you can invoke / call it anytime you want by invoking a function.
+        user.show.call(user2)
+
+        user.show.apply(person)
+
+        let returnedFn = user.show.bind(person);
+
+        console.log(returnedFn());
+    </script>
+</body>
+
+</html>
