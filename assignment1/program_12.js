@@ -1,24 +1,24 @@
 // 12. Write program to call the getUsers then print users using callback, promise.
 
 //call back using getuser function
-// function getUsers(fn) {
-//     console.log("user data");
-//     setTimeout(() => {
-//         console.log("fetching data")
-//         fn(
-//             {
-//                 name: "sameer",
-//                 age: "20",
-//                 id: "101"
-//             }
-//         );
-//     }, 400);
-// }
+function getUsers(fn) {
+    console.log("user data");
+    setTimeout(() => {
+        console.log("fetching data")
+        fn(
+            {
+                name: "sameer",
+                age: "20",
+                id: "101"
+            }
+        );
+    }, 400);
+}
 
-// function showUser() {
-//     console.log("user done");
-// }
-// getUsers(showUser);// call back
+function showUser() {
+    console.log("user done");
+}
+getUsers(showUser);// call back
 
 
 //promise using getuser function
