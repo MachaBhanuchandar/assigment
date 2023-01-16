@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pomodoro Timer
+    </title>
+    <!-- css -->
+    <link rel="stylesheet" href="pomodorcss.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/57e48f89a0.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>Pomodoro</h1>
+
+            <div class="painel">
+                <p id="work" class="active">work</p>
+                <p id="break">break</p>
+            </div>
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <P id="seconds"></P>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+
+                <button id="start" onclick="start()"><i class="fa-sharp fa-solid fa-play"></i></button>
+                <a id="reset" href="http://127.0.0.1:5500/MiniPoject/pomodortimer.html"><i
+                        class="fa-sharp fa-solid fa-rotate-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- javaScript -->
+    <script src="pomodor.js"></script>
+</body>
+
+</html>
